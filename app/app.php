@@ -1,6 +1,6 @@
 <?php
     require_once __DIR__."/../vendor/autoload.php";
-    require_once __DIR__."/../src/foTranslator.php";
+    require_once __DIR__."/../src/SnoopTranslator.php";
 
     $app new Silex\Application();
     $app['debug']= true;
@@ -13,4 +13,4 @@
 
 
     return $app;
-?>    
+?>
