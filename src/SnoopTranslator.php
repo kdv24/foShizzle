@@ -3,8 +3,13 @@
     {
         function translate($input)
         {
-            $output = array($input);
-            return $output;
+            $input = "else";
+            $stringtocheck = $input;
+            $forbiddenword = "s";
+            if (stripos($stringtocheck, $forbiddenword) !== false)
+            {
+                return $stringtocheck. ' contains the string '.$forbiddenword;
+            }
         }
     }
 ?>

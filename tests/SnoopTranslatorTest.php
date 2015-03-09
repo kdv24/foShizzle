@@ -17,5 +17,20 @@
             $output = array("Hi");
             $this->assertEquals($output, $result);
         }
+
+        function test_translate_explode()
+        //convert input string to array
+        {
+            //Arrange
+            $test_SnoopTranslator = new SnoopTranslator;
+            $input = "else";
+
+            //Act
+            $result = $test_SnoopTranslator->translate($input);
+
+            //Assert
+            $output = array("e", "l", "s", "e");
+            $this->assertEquals($output, $result);
+        }
     }
 ?>
